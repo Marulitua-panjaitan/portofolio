@@ -1,0 +1,70 @@
+* {
+    animation :transisi 1s ease normal;;
+}
+
+#p {
+    margin-left: 100px;
+    color: inherit;
+    animation: sliding 1s ease infinite alternate,
+               transisi 2s ease normal;
+               
+}
+#kontak {
+    animation: transisi 2s ease normal;
+}
+#image {
+     animation: transisi 1s ease normal;
+}
+#name {
+
+    animation: fontStyle 9s ease infinite alternate-reverse,
+                transisi 2s ease normal;
+    
+}
+#tentang-keterangan {
+    text-align: justify;
+    animation: font 3s ease infinite alternate-reverse;
+}
+@keyframes sliding {
+    from {
+        margin-left:-20px;
+    }
+    to {
+        margin-right: 20px;
+    }
+}
+@keyframes fontStyle {
+    0%{
+     color:inherit;   
+    }
+    25%{
+      color: orange;
+    }
+    50% {
+      color:brown;
+    }
+    100% {
+        color: rgb(37 99 235);
+    }
+}
+
+@keyframes transisi {
+   0% {
+    opacity: 0;
+   }
+   50% {
+    opacity: 0.75;
+   }
+   100% {
+    opacity: 1;
+   }
+}
+
+@keyframes font {
+    from {
+        font-style: normal;
+    }
+    to {
+        font-style: italic;
+    }
+}
