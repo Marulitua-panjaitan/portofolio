@@ -3,7 +3,7 @@
 }
 
 #p {
-    margin-left: 100px;
+    
     color: inherit;
     animation: sliding 1s ease infinite alternate,
                transisi 2s ease normal;
@@ -27,10 +27,10 @@
 }
 @keyframes sliding {
     from {
-        margin-left:-2px;
+        margin-left:-5px;
     }
     to {
-        margin-right: 2px;
+        margin-right:5px;
     }
 }
 @keyframes fontStyle {
